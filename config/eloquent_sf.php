@@ -19,6 +19,9 @@ return [
     'noSoftDeletesOn' => [
         'User',
     ],
+    'noTimestampsOn' => [
+        // specify tables which have no CreatedDate or LastModifiedDate fields
+    ],
 
     'syncTwoWay' => false, // Indicate if you want SF changes to feed back to your local database. Otherwise, it is a one-way sync. local->salesforce
     'syncPriority' => 'salesforce', // If there is a conflict, notably a dirty local model when an inbound sync is occurring, ElSF will prefer this setting: 'salesforce' or 'local' or 'exception' or 'silent'
